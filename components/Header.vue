@@ -5,17 +5,32 @@
             姚君荣的个人博客
         </div>
         <div class="header-center">
-            <Menu mode="horizontal" active-name="1">
-                <MenuItem name="1">
-                    <nuxt-link to="/" class="nav-item">
-                        博客首页
-                    </nuxt-link>      
+            <Menu mode="horizontal" active-name="/" @on-select="linkChange">
+                <MenuItem name="/">
+                    博客首页
+                </MenuItem>
+                 <MenuItem name="/ArticleList">
+                    文章列表
                 </MenuItem>
             </Menu>
         </div>
       </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+      return {}
+  },
+  methods: {
+      linkChange(val) {
+          this.$router.push(val)
+      }
+  }
+}
+</script>
+
 
 <style>
 .nav .ivu-menu-horizontal {
@@ -52,6 +67,7 @@
 .header-left {
     line-height: 56px;
     font-size: 20px;
+    font-weight: 700;
 }
 .header-center {
     width: 945px;
