@@ -1,76 +1,53 @@
 <template>
-  <div class="nav navbar-fixed-top">
-      <div class="header clear-fixed">
-        <div class="header-left fll">
-            姚君荣的个人博客
-        </div>
-        <div class="header-center">
-            <Menu mode="horizontal" active-name="/" @on-select="linkChange">
-                <MenuItem name="/">
-                    博客首页
-                </MenuItem>
-                 <MenuItem name="/ArticleList">
-                    文章列表
-                </MenuItem>
-            </Menu>
-        </div>
-      </div>
-  </div>
+    <div class="nav">
+        <b-container>
+            <b-row>
+                <b-col style="margin: 0 auto;">
+                    <b-navbar toggleable="md" type="default" variant="default">
+                        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+                        <b-navbar-brand><h1 class="main">姚君荣的网络博客</h1></b-navbar-brand>
+                        <b-collapse is-nav id="nav_collapse">
+
+                            <b-navbar-nav>
+                                <b-nav-item href="/content" @click.prevent="jump($event)"><span class="text-primary nav-it">博客首页</span></b-nav-item>
+                                <b-nav-item href="/articleList" @click.prevent="jump($event)"><span class="text-primary nav-it">文章列表</span></b-nav-item>
+                            </b-navbar-nav>
+
+                        </b-collapse>
+                    </b-navbar>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
 </template>
 
 <script>
-export default {
-  data() {
-      return {}
-  },
-  methods: {
-      linkChange(val) {
-          this.$router.push(val)
-      }
-  }
-}
+    export default {
+        data() {
+            return {}
+        },
+        methods: {
+            jump(e) {
+                this.$router.push(`/${e.currentTarget.children[0].href.split('/').pop()}`)
+            }
+        }
+    }
 </script>
 
-
-<style>
-.nav .ivu-menu-horizontal {
-    line-height: 56px;
-}
-.ivu-menu-horizontal.ivu-menu-light:after {
-    content: '';
-    height: 0;
-}
-</style>
-
 <style scoped>
-.nav {
-    background-color: #fff;
-    border-bottom: 1px solid #f0f0f0;
-}
-.nav-item {
-    display: block;
-    width: 100%;
-    line-height: 56px;
-}
-.navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-.header {
-    min-width: 768px;
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 56px;
-}
-.header-left {
-    line-height: 56px;
-    font-size: 20px;
-    font-weight: 700;
-}
-.header-center {
-    width: 945px;
-    margin: 0 auto;
-}
+    .main {
+        color: #333;
+        font-size: 23px;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-it {
+        font-size: 16px;
+    }
 </style>

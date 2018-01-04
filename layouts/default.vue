@@ -1,7 +1,7 @@
 <template>
   <div>
     <MyHeader></MyHeader>
-    <nuxt class="layout" />
+    <nuxt/>
   </div>
 </template>
 
@@ -23,7 +23,5 @@ export default {
 </script>
 
 <style>
-.layout {
-  padding-top: 61px;
-}
+
 </style>
