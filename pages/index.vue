@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-      <p v-for="item in 100">我是内容</p>
+
   </div>
 </template>
 
@@ -10,12 +10,12 @@ import axios from '~/plugins/axios'
 export default {
    asyncData: async function() {
     let { data } = await axios.get('/api/users')
-    console.log(data)
-       return {users: data}
+    let {data:articleList} = await axios.get('/api/articleList')
+       return {users: data, articleList}
   },
   head () {
     return {
-      title: this.users[0].name
+      title: '姚君荣的个人博客'
     }
   },
   methods: {
@@ -24,7 +24,7 @@ export default {
     }
   },
     mounted() {
-       console.log(this.users)
+       console.log(this.articleList)
     }
 
 }
