@@ -1,3 +1,4 @@
+const vueLoader = webpackConfig.module.rules.find((rule) => rule.loader === 'vue-loader') vueLoader.options.loaders.sass = 'vue-style-loader!css-loader!sass-loader'
 module.exports = {
     modules: [
         'bootstrap-vue/nuxt',

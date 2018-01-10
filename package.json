@@ -19,7 +19,9 @@
     "element-ui": "2.0.10",
     "express": "^4.15.3",
     "mysql": "^2.15.0",
+    "node-sass": "^4.7.2",
     "nuxt": "^1.0.0-rc3",
+    "sass-loader": "^6.0.6",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
