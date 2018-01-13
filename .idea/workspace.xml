@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c16ab50-7595-4287-8cea-8d89992cf256" name="Default" comment="首页组件开发,数据渲染">
+    <list default="true" id="3c16ab50-7595-4287-8cea-8d89992cf256" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" afterPath="$PROJECT_DIR$/nuxt.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -198,6 +197,12 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -283,7 +288,7 @@
       <workItem from="1515552941871" duration="41000" />
       <workItem from="1515560255499" duration="3945000" />
       <workItem from="1515570569964" duration="10266000" />
-      <workItem from="1515805469104" duration="200000" />
+      <workItem from="1515805469104" duration="507000" />
     </task>
     <task id="LOCAL-00001" summary="新增数据库操作.新增文章列表字段.">
       <created>1515432318692</created>
@@ -299,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515608007900</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="预处理器">
+      <created>1515805680463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515805680463</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36217000" />
+    <option name="totallyTimeSpent" value="36524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="392" y="269" width="2523" height="1452" extended-state="6" />
@@ -340,7 +352,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增数据库操作.新增文章列表字段." />
     <MESSAGE value="首页组件开发,数据渲染" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页组件开发,数据渲染" />
+    <MESSAGE value="预处理器" />
+    <option name="LAST_COMMIT_MESSAGE" value="预处理器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
